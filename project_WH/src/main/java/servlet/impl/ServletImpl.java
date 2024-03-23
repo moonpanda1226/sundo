@@ -1,6 +1,7 @@
 package servlet.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -20,5 +21,10 @@ public class ServletImpl extends EgovAbstractServiceImpl implements ServletServi
 	public String addStringTest(String str) throws Exception {
 		List<EgovMap> mediaType = dao.selectAll();
 		return str + " -> testImpl ";
+	}
+
+	@Override
+	public void uploadFile(List<Map<String, Object>> list) {
+		
 	}
 }

@@ -12,4 +12,20 @@
 				1=1
 		]]>
 	</select>
+	
+	<select id="suhyun" resultType="servlet.dto.ServletDTO">
+		SELECT sd_nm, sd_cd FROM tl_sd
+	</select>
+	
+	<select id="zzang9" parameterType="String" resultType="servlet.dto.ServletDTO">
+		SELECT sgg_nm, sgg_cd 
+		FROM tl_sgg
+		WHERE sd_nm=#{text}
+		
+	</select>
+	<select id="suryeon" parameterType="String" resultType="servlet.dto.ServletDTO">
+		SELECT bjd_nm, bjd_cd 
+		FROM tl_bjd
+		
+	</select>
 </mapper>
