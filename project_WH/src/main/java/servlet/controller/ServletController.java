@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import servlet.service.ServletService;
-
+//안녕
 @Controller
 public class ServletController {
 	@Resource(name = "ServletService")
